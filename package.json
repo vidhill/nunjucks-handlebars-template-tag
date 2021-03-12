@@ -1,0 +1,24 @@
+{
+  "name": "nunjucks-handlebars-template-tag",
+  "version": "1.0.0",
+  "description": "Custom nunjucks tag to include handlebar templates",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vidhill/nunjucks-handlebars-template.git"
+  },
+  "keywords": [
+    "nunjucks",
+    "tag",
+    "handlebars"
+  ],
+  "author": "David Hill",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vidhill/nunjucks-handlebars-template/issues"
+  },
+  "homepage": "https://github.com/vidhill/nunjucks-handlebars-template#readme"
+}
