@@ -5,6 +5,7 @@
   "main": "build/index.js",
   "scripts": {
     "build": "babel src -d build",
+    "dev": "watch 'npm run build' src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,6 +26,7 @@
   "devDependencies": {
     "@babel/cli": "^7.13.10",
     "@babel/core": "^7.13.10",
-    "babel-preset-latest-node": "^5.4.0"
+    "babel-preset-latest-node": "^5.4.0",
+    "watch": "^1.0.2"
   }
 }
