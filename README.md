@@ -1,4 +1,4 @@
-# nunjucks-handlebars-template
+# nunjucks-handlebars-template-tag
 Nunjucks custom tag to include raw handlebar templates from external files
 
 ```

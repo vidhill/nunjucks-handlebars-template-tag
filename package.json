@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vidhill/nunjucks-handlebars-template.git"
+    "url": "git+https://github.com/vidhill/nunjucks-handlebars-template-tag.git"
   },
   "keywords": [
     "nunjucks",
@@ -29,9 +29,9 @@
   "author": "David Hill",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vidhill/nunjucks-handlebars-template/issues"
+    "url": "https://github.com/vidhill/nunjucks-handlebars-template-tag/issues"
   },
-  "homepage": "https://github.com/vidhill/nunjucks-handlebars-template#readme",
+  "homepage": "https://github.com/vidhill/nunjucks-handlebars-template-tag#readme",
   "devDependencies": {
     "@babel/cli": "^7.13.10",
     "@babel/core": "^7.13.10",
