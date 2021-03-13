@@ -1,5 +1,5 @@
 # nunjucks-handlebars-template
-Nunjucks custom tag to include handlebar templates
+Nunjucks custom tag to include raw handlebar templates from external files
 
 ```
 $ npm install nunjucks-handlebars-template-tag --save
@@ -29,4 +29,4 @@ env.addExtension('IncludeHandlebarsTemplate', new IncludeHandlebarsTemplate());
     // raw content of includes/my-template.handlebars
 </script>
 ```
-**Note** the `id` of the script matches the filename of the included file
+**Note** the `id` of the script matches the filename of the included file, this is by design
