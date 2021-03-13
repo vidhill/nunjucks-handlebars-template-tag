@@ -26,7 +26,7 @@ env.addExtension('IncludeHandlebarsTemplate', new IncludeHandlebarsTemplate());
 ### Outputs
 ```html
 <script id="my-template" type="text/x-handlebars-template">
-    // raw contents of includes/my-template.handlebars
+    // raw content of includes/my-template.handlebars
 </script>
 ```
 **Note** the `id` of the script matches the filename of the included file
