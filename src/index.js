@@ -38,7 +38,7 @@ function IncludeHandlebarsTemplate() {
             `</script>`
         );
 
-        return new nunjucks.runtime.SafeString(html);
+        return context.env.filters.safe(html);
     };
 }
 
