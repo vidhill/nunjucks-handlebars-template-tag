@@ -1,5 +1,4 @@
 import path from 'path';
-import nunjucks from 'nunjucks';
 import logger from './logger';
 
 const joinNewlines = (...parts) => parts.join('\n');
