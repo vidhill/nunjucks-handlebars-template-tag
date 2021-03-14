@@ -19,25 +19,29 @@ function IncludeHandlebarsTemplate() {
     };
 
     this.run = function (context, filePath) {
-        const loadedArr = context.env.loaders.map((loader) =>
+        const { env } = context;
+        const { filters, loaders } = env;
+        const loadedContentArr = loaders.map((loader) =>
             loader.getSource(filePath)
         );
 
-        const loaded = loadedArr.find((i) => i.src !== undefined);
+        const loadedContent = loadedContentArr.find(
+            (item) => item.src !== undefined
+        );
 
         const fileInfo = path.parse(filePath);
 
-        if (loaded === null) {
+        if (loadedContent === null) {
             return logger.warn(`File at path '${filePath}' not found`);
         }
 
         const html = joinNewlines(
             `<script id="${fileInfo.name}" type="text/x-handlebars-template">`,
-            loaded.src,
+            loadedContent.src,
             `</script>`
         );
 
-        return context.env.filters.safe(html);
+        return filters.safe(html);
     };
 }
 
