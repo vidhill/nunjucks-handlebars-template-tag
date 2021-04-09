@@ -3,10 +3,12 @@ import logger from './logger';
 
 const joinNewlines = (...parts) => parts.join('\n');
 
-function IncludeHandlebarsTemplate() {
-    this.tags = ['includeHandleBarsTemplate'];
+class IncludeHandlebarsTemplate {
+    constructor() {
+        this.tags = ['includeHandleBarsTemplate'];
+    }
 
-    this.parse = function (parser, nodes) {
+    parse(parser, nodes) {
         // get the tag token
         const tok = parser.nextToken();
 
@@ -16,9 +18,9 @@ function IncludeHandlebarsTemplate() {
         parser.advanceAfterBlockEnd(tok.value);
 
         return new nodes.CallExtension(this, 'run', args, []);
-    };
+    }
 
-    this.run = function (context, filePath) {
+    run(context, filePath) {
         const { env } = context;
         const { filters, loaders } = env;
         const loadedContentArr = loaders.map((loader) =>
@@ -42,7 +44,7 @@ function IncludeHandlebarsTemplate() {
         );
 
         return filters.safe(html);
-    };
+    }
 }
 
 export { IncludeHandlebarsTemplate };
