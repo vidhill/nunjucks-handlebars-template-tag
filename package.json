@@ -1,6 +1,6 @@
 {
   "name": "nunjucks-handlebars-template-tag",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Custom nunjucks tag to include handlebar templates",
   "main": "build/index.js",
   "scripts": {
