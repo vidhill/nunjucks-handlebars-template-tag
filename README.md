@@ -1,4 +1,5 @@
 # nunjucks-handlebars-template-tag
+
 Nunjucks custom tag to include raw handlebar templates from external files
 
 ```
@@ -6,9 +7,12 @@ $ npm install nunjucks-handlebars-template-tag --save
 ```
 
 ## Setup
+
 ```javascript
 const nunjucks = require('nunjucks');
-const { IncludeHandlebarsTemplate } = require('nunjucks-handlebars-template-tag');
+const {
+    IncludeHandlebarsTemplate,
+} = require('nunjucks-handlebars-template-tag');
 
 const fileSystem = new nunjucks.FileSystemLoader('views');
 
@@ -20,13 +24,15 @@ env.addExtension('IncludeHandlebarsTemplate', new IncludeHandlebarsTemplate());
 ## Usage
 
 ```javascript
-  {% includeHandleBarsTemplate "includes/my-template.handlebars" %}
+   {% includeHandleBarsTemplate "includes/my-template.handlebars" %}
 ```
 
 ### Outputs
+
 ```html
 <script id="my-template" type="text/x-handlebars-template">
-    // raw content of includes/my-template.handlebars
+    <!-- raw content of includes/my-template.handlebars -->
 </script>
 ```
+
 **Note** the `id` of the script matches the filename of the included file, this is by design
