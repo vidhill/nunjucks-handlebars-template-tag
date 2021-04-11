@@ -1,5 +1,7 @@
 # nunjucks-handlebars-template-tag
 
+![node js workflow](https://github.com/vidhill/nunjucks-handlebars-template-tag/actions/workflows/node.js.yml/badge.svg)
+
 Nunjucks custom tag to include raw handlebar templates from external files
 
 ```
